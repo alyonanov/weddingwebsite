@@ -5,7 +5,7 @@ const HomePage =() => {
     const [onAnimation, setOnAnimation] = useState(false);
 
     useEffect (() => {
-        axios.get(`https://64aaeacd0c6d844abedefaf6.mockapi.io/api/v1/guests/1`) .then(res => {
+        axios.get(`https://64aaeacd0c6d844abedefaf6.mockapi.io/api/v1/guests/1`).then(res => {
         });
     }, []);
 
@@ -14,6 +14,7 @@ const HomePage =() => {
             setOnAnimation(true);
             setTimeout(() => setOnAnimation(false), 1750)
         }
+        
     }
 
     return(

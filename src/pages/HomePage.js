@@ -1,7 +1,11 @@
 import './HomePage.css'
 import {useEffect, useState} from "react";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
 const HomePage =() => {
+    const navigate = useNavigate();
+
     const [onAnimation, setOnAnimation] = useState(false);
 
     useEffect (() => {
@@ -10,6 +14,7 @@ const HomePage =() => {
     }, []);
 
     const onFireworkClick = () => {
+        navigate(`info/1`)
         if (!onAnimation) {
             setOnAnimation(true);
             setTimeout(() => setOnAnimation(false), 1750)

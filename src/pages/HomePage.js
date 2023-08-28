@@ -1,44 +1,32 @@
 import './HomePage.css'
 import {useEffect, useState} from "react";
 import axios from 'axios';
+import FirstScreen from '../components/firstpage/FirstScreen.js';
+import Info from '../components/info/Info.js';
+import TableSeat from '../components/tableseat/TableSeat.js';
+import Maps from '../components/maps/Maps.js';
+import ScrollBar from '../components/scrollBar/ScrollBar.js';
 
 const HomePage =() => {
-    const [onAnimation, setOnAnimation] = useState(false);
 
     useEffect (() => {
         axios.get(`https://64aaeacd0c6d844abedefaf6.mockapi.io/api/v1/guests/1`).then(res => {
         });
     }, []);
+    const [coordinate, setCoordinate] = useState([54.855040, 26.862457]);
+    console.log(coordinate);
 
-    const onFireworkClick = () => {
-        if (!onAnimation) {
-            setOnAnimation(true);
-            setTimeout(() => setOnAnimation(false), 1750)
-        }
-        
-    }
-
+   
     return(
         <div >
             <div className="homepage">
-                <p className='homePageText'>
-                    Совсем скоро
-                </p>
-            <div className='oval' onClick={onFireworkClick}>
-                <p className='homePageText'>
-                    тут
-                </p>
-            </div>
-            <p className='homePageText'>
-                что-то будет...
-            </p>
+                <ScrollBar/>
+                <FirstScreen/>
+                <Info/>
+                <TableSeat/>
+                <Maps coordinate={coordinate}/>
 
-            </div>
-            {onAnimation && <>
-                <div className="firework"></div>
-                <div className="firework"></div>
-                <div className="firework"></div>
-            </>}
+            </div>         
         </div>
     )
 }

@@ -1,0 +1,45 @@
+.mapBlock{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: andantino;
+    color: #A03C3C;
+}
+.mapGatovichi{
+    padding: 0 0 40px 0;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.mapGatovichi p{
+    margin: 5px 0;
+}
+.addressHeader{
+    font-size: 5vw;
+}
+.address{
+    font-size: 4vw;
+    padding-bottom: 20px;
+}
+.mapShirki{
+    padding: 20px 0;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapShirki p{
+    margin: 5px 0;
+}
+
+@font-face {
+    font-family: "andantino"; 
+    src: url("../../fonts/lemon.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 

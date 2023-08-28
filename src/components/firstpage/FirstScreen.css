@@ -1,0 +1,23 @@
+.headerBlock{
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerSvg{
+    width: 85vw;
+    padding-right: 10vw;
+    
+}
+.testtext{
+    font-size: 2em;
+    color: #C7A27C;
+}
+@font-face {
+    font-family: "vivaldi"; 
+    src: url("../../fonts/vivaldi.otf") format("truetype"); 
+    
+    } 
+   

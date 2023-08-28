@@ -1,0 +1,35 @@
+.tableBlock{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.tableSvg{
+    width: 46vw;
+}
+.firstTable{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+.secondTable{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+.table{
+    width: 128px;
+    height: 889px;
+    border: 1.5px solid black;
+    background-color: white;
+}
+.chair{
+    width: 5.3vw;
+
+}
+.chairArrLeft{
+    transform: scale(-1,1);
+}
+.chairArr{
+
+}

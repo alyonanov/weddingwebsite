@@ -1,0 +1,47 @@
+.infoBlock{
+    padding-top: 5vh;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.dots{
+    border-left: 7px;
+    border-left-style: dotted;
+    color: #C7A27C;
+    width: 1px;
+    height: 76px;
+    margin: 8px 0px 8px 10vw;
+
+}
+.infoRow{
+    display: flex;
+    padding: 4vh 0;
+    align-items: center;
+    color: #A03C3C;
+
+}
+.infoTime{
+    font-family: andantino;
+    padding-left: 9vw;
+    padding-right: 8vw;
+    font-size: 4.5vw
+}
+.infoPlace{
+    font-family: andantino;
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.infoSvg{
+    width: 20vw;
+}
+
+
+@font-face {
+    font-family: "andantino"; 
+    src: url("../../fonts/lemon.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 

@@ -30,18 +30,18 @@
     border-bottom: none;
 }
 #second{
-    height: 266px;
+    height: 275px;
     border-bottom: none
 }
 #third{
-    height: 266px;
+    height: 270px;
 }
 #fourth{
-    height: 266px;
+    height: 270px;
     border-bottom: none;
 }
 #fifth{
-    height: 266px;
+    height: 270px;
     border-bottom: none
 }
 #sixth{
@@ -51,11 +51,17 @@
     transform: rotate(90deg);
     position: relative;
     right: 80px;
-    bottom: 12px;
+    bottom: 8px;
 }
 .chair{
     width: 5.3vw;
 
+}
+.plate{
+    width: 9.3vw;
+    position: absolute;
+    right: 15px;
+    bottom: 9px;
 }
 .chairArrLeft{
     transform: scale(-1,1);
@@ -68,6 +74,10 @@
     align-items: center;
     justify-content: center;
    
+}
+.plateDiv{
+    transform: scale(1,-1) rotate(-90deg);
+    
 }
 @font-face {
     font-family: "andantino"; 

@@ -19,9 +19,39 @@
 }
 .table{
     width: 128px;
-    height: 889px;
-    border: 1.5px solid black;
+    border: 1px solid black;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#first{
+    height: 266px;
+    border-bottom: none;
+}
+#second{
+    height: 266px;
+    border-bottom: none
+}
+#third{
+    height: 266px;
+}
+#fourth{
+    height: 266px;
+    border-bottom: none;
+}
+#fifth{
+    height: 266px;
+    border-bottom: none
+}
+#sixth{
+    height: 366px;
+}
+#lastChair{
+    transform: rotate(90deg);
+    position: relative;
+    right: 80px;
+    bottom: 12px;
 }
 .chair{
     width: 5.3vw;
@@ -30,6 +60,18 @@
 .chairArrLeft{
     transform: scale(-1,1);
 }
-.chairArr{
-
+.tableBoard{
+    border: solid 1px black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
+@font-face {
+    font-family: "andantino"; 
+    src: url("../../fonts/lemon.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
